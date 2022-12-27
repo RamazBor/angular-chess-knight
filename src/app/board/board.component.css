@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+.divv {
+    display: flex;
+    justify-content: center;
+}
+ul {
+    max-width: 1200px;
+    width: calc(75px*8);
+    border: 2px dashed blue;
+    margin: auto;
+}
+
+li {
+    list-style: none;
+    display: grid;
+    place-items: center;
+    font-size: 0px;
+    position: relative;
+}
+
+.box {
+    margin: .5px;
+    width: 75px;
+    height: 75px;
+}
+.black {
+    background: rgb(100, 75, 43);
+}
+
+.white {
+    background: rgb(240, 201, 150);
+}
+
+
+
+div li img {
+    width: 90%;
+    position: absolute;
+    top: auto;
+    bottom: auto;
+    cursor: pointer;
+}
+
+
+@media (max-width:650px){
+
+    .box {
+        width: 11vw;
+        height: 11vw;
+    }
+
+    div li img {
+        width: 7vw;
+    }
+}
